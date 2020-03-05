@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="525" Width="350">
+        Title="Calculator" Height="525" Width="350">
     <Grid Margin="10">
         <Grid.ColumnDefinitions >
             <ColumnDefinition Width="*" />
@@ -19,72 +19,90 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <Label Content="0" 
+        <Label x:Name="resultLabel" Content="0" 
                HorizontalAlignment="Right"
                VerticalAlignment="Bottom"
                FontSize="60"
                Margin="5"
                Grid.ColumnSpan="4" />
-        <Button Content="AC"
+        <Button x:Name="acButton" Content="AC"
                 Margin="5"
                 Grid.Row="1"
                 Grid.Column="0"/>
-        <Button Content="+/-"
+        <Button x:Name="signButton" Content="+/-"
                 Margin="5"
                 Grid.Row="1"
                 Grid.Column="1"/>
-        <Button Content="%"
+        <Button x:Name="percentButton" Content="%"
                 Margin="5"
                 Grid.Row="1"
                 Grid.Column="2"/>
-        <Button Content="/"
+        <Button x:Name="divideButton" Content="/"
                 Margin="5"
                 Grid.Row="1"
                 Grid.Column="3"/>
-        <Button Content="7"
+        <Button x:Name="sevenButton" Content="7"
+                Click="sevenButton_Click"
                 Margin="5"
                 Grid.Row="2"
                 Grid.Column="0"/>
-        <Button Content="8"
+        <Button x:Name="eightButton" Content="8"
                 Margin="5"
                 Grid.Row="2"
                 Grid.Column="1"/>
-        <Button Content="9"
+        <Button x:Name="nineButton" Content="9"
                 Margin="5"
                 Grid.Row="2"
                 Grid.Column="2"/>
-        <Button Content="*"
+        <Button x:Name="multiplyButton" Content="*"
                 Margin="5"
                 Grid.Row="2"
                 Grid.Column="3"/>
-        <Button Content="4"
+        <Button x:Name="fourButton" Content="4"
                 Margin="5"
                 Grid.Row="3"
                 Grid.Column="0"/>
-        <Button Content="5"
+        <Button x:Name="fiveButton" Content="5"
                 Margin="5"
                 Grid.Row="3"
                 Grid.Column="1"/>
-        <Button Content="6"
+        <Button x:Name="sixButton" Content="6"
                 Margin="5"
                 Grid.Row="3"
                 Grid.Column="2"/>
-        <Button Content="-"
+        <Button x:Name="subtractButton" Content="-"
                 Margin="5"
                 Grid.Row="3"
                 Grid.Column="3"/>
-        <Button Content="0"
+        <Button x:Name="oneButton" Content="4"
                 Margin="5"
                 Grid.Row="4"
+                Grid.Column="0"/>
+        <Button x:Name="twoButton" Content="5"
+                Margin="5"
+                Grid.Row="4"
+                Grid.Column="1"/>
+        <Button x:Name="threeButton" Content="6"
+                Margin="5"
+                Grid.Row="4"
+                Grid.Column="2"/>
+        <Button x:Name="addButton" Content="+"
+                Margin="5"
+                Grid.Row="4"
+                Grid.Column="3"/>
+        <Button x:Name="zeroButton" Content="0"
+                Margin="5"
+                Grid.Row="5"
                 Grid.ColumnSpan="2"/>
-        <Button Content="."
+        <Button x:Name="decimalButton" Content="."
                 Margin="5"
-                Grid.Row="4"
+                Grid.Row="5"
                 Grid.Column="2"/>
-        <Button Content="="
+        <Button x:Name="equalButton" Content="="
                 Margin="5"
-                Grid.Row="4"
+                Grid.Row="5"
                 Grid.Column="3"/>
     </Grid>
 </Window>
