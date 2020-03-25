@@ -7,10 +7,7 @@
         mc:Ignorable="d"
         Title="Calculator" Height="525" Width="350">
     <Window.Resources>
-        <SolidColorBrush x:Key="numbersColor" Color="#444444" />
-        <SolidColorBrush x:Key="operatorsColor" Color="Green" />
-        <SolidColorBrush x:Key="numberForground" Color="White" />
-        <SolidColorBrush x:Key="operatorForeground" Color="White" />
+        
     </Window.Resources>
     <Grid Margin="10">
         <Grid.ColumnDefinitions >
